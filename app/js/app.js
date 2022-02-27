@@ -25,7 +25,7 @@ const cliPesquisado2 = clientes.pesquisarPorCPF('555');
 if (cliPesquisado2) {
     console.log(`${cliPesquisado2.nome}`);
     if(typeof(cliPesquisado2) === 'object') {
-        console.log(`Saldo do cliente: ${cliPesquisado2.saldoTotal}`)
+        console.log(`Saldo do cliente: ${cliPesquisado2.saldoTotal()}`)
     }
 }
 else {

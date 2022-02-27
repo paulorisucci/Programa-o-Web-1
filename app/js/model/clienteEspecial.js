@@ -13,7 +13,7 @@ class ClienteEspecial extends Cliente{
         this._contaEspecial = contaEspecial;
     }
 
-    get saldoTotal() {
+    saldoTotal() {
         return this._contaEspecial.saldo + this.conta.saldo;
     }
 }
